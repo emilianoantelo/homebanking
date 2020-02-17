@@ -1,0 +1,16 @@
+#grad {
+  background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+}
+
+#grad_inv {
+  background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
+}
+
+
+.img_home {
+  position: relative;
+  display: inline-block;
+  max-height: 100%;
+  width: 100%;
+}
+

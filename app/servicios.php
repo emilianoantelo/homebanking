@@ -4,8 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class servicios extends Model
+class Servicio extends Model
 {
     protected $table = "servicios";
-    protected $fillable=['nombre de servicio', 'nombre de referencia', 'importe'];
+    protected $fillable=['nombre', 'referencia', 'importe'];
 }

@@ -31,6 +31,6 @@ class CrearTablaServicios extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('servicios');
+        //Schema::dropIfExists('servicios');
     }
 }

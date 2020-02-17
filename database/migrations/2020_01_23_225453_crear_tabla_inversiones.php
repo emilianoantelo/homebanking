@@ -17,7 +17,7 @@ class CrearTablaInversiones extends Migration
             $table->bigIncrements('id');
             $table->string('empresa');
             $table->integer('acciones');
-            $table->decimal('valor de accion',8,2);
+            $table->decimal('valor_de_accion',8,2);
             $table->decimal('total',8,2);
             $table->timestamps();
         });
@@ -30,6 +30,6 @@ class CrearTablaInversiones extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('inversiones');
+        //Schema::dropIfExists('inversiones');
     }
 }

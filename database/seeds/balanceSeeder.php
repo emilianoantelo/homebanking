@@ -15,28 +15,11 @@ class balanceSeeder extends Seeder
         $balances=[
             [
             'descripcion'=>'recibo de Javier',
-            'ingreso'=>50,
-            'egreso'=>50,
-            'saldo'=>1050
+            'ingreso'=>10000,
+            'egreso'=>0,
+            'saldo'=>10000
             ], 
-            [
-            'descripcion'=>'recibo de Javier',
-            'ingreso'=>50,
-            'egreso'=>50,
-            'saldo'=>1050
-            ], 
-            [
-            'descripcion'=>'recibo de Javier',
-            'ingreso'=>50,
-            'egreso'=>50,
-            'saldo'=>1050
-            ], 
-            [
-            'descripcion'=>'recibo de Javier',
-            'ingreso'=>50,
-            'egreso'=>50,
-            'saldo'=>1050
-            ], 
+            
         ];
 
         foreach ($balances as $bal)

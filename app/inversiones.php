@@ -4,7 +4,9 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class inversiones extends Model
+class Inversion extends Model
 {
-    protected $fillable=['empresa','acciones','valor de la accion', 'comprobante de accion'];
+    protected $table = "inversiones";
+
+    protected $fillable=['empresa','acciones','valor_de_accion', 'total'];
 }

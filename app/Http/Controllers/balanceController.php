@@ -7,10 +7,11 @@ class BalanceController extends Controller
 
     public function index()
     {
-
-		$balance = Balance::orderBy('id','ASC')->get();
-		return view('balance')->with('balance' , $balance);
-
+    $balance = Balance::orderBy('id','DESC')->get();
+            return view('pages/balance')->
+            with(
+                'balance', $balance
+            );
     }
 
 }

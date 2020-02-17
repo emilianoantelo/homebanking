@@ -31,6 +31,6 @@ class MigracionBalance extends Migration
      */
     public function down()
     {
-        //
+        //Schema::dropIfExists('servicios');
     }
 }

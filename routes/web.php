@@ -11,13 +11,25 @@
 |
 */
 
-route::get("/", "HomeController@index");
-route::get("balance", "BalanceController@index");
-route::get("pago_servicios", "ServiceController@index");
-route::get("inversiones", "InvestmentController@index");
-Route::post("/pagoDeServicios", "PagosController@payService")->name("pago_servicios.pay");
+Route::get("/", "HomeController@index");
+Route::get("pages/balance", "BalanceController@index");
+Route::get("pages/pago_servicios", "ServiceController@index");
+Route::get("pages/inversiones", "InvestmentController@index");
+Route::get("pages/inversiones/comprar/{id}", "InvestmentController@comprar")->name('inversiones.comprar');
+Route::get("pages/inversiones/vender/{id}", "InvestmentController@vender")->name('inversiones.vender');
 
-
-Route::post("/pago_servicios/pay", "HomeController@payService")->name("pago_servicios.pay");
-
+Route::post('/pages/pago_servicios/pago',[
+    'as'=> 'sevicios.pago',
+    'uses'=> 'ServiceController@pago'
+    ]);
+/*
+Route::get('pages/inversiones/comprar',[
+    'as'=> 'inversiones.comprar',
+    'uses'=> 'InvestmentController@comprar'
+]);
+Route::get('pages/inversiones/vender',[
+    'as'=> 'inversiones.vender',
+    'uses'=> 'InvestmentController@vender'
+]);
+*/
 ?>
